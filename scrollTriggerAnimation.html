@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Trigger Animation</title>
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/scrollTrigger.css">
+    <script src="https://unpkg.com/@phosphor-icons/web@2.0.3"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="logo"></div>
+    <div class="header">
+        <div class="letters">
+            <div>a</div>
+            <div>r</div>
+            <div>t</div>
+            <div>w</div>
+        </div>
+        <div class="letters">
+            <div>o</div>
+            <div>r</div>
+            <div>k</div>
+        </div>
+    </div>
+    <div class="website-content">
+        <div class="img-holder">
+            <img src="./assets/artworks.jpg" alt="Artworks">
+        </div>
+
+        <div class="content-holder">
+            <div class="row">
+                <h1>History</h1>
+            </div>
+            <div class="row">
+                <div class="img">
+                    <img src="./assets/art-1.jpg" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="img">
+                    <img src="./assets/art-2.jpg" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="img">
+                    <img src="./assets/artworks.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="row">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem illo sit vel deleniti! Cumque consectetur non, vitae quisquam ratione provident?</p>
+            </div>
+            <div class="row">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic vero est vitae veniam obcaecati assumenda neque blanditiis necessitatibus laborum porro.</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger)
+    </script>
+    <script src="./scripts/scrollTrigger.js"></script>
+</body>
+</html>
