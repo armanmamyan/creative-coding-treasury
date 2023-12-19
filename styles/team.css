@@ -1,0 +1,150 @@
+* { 
+    cursor: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.cursor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 30px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 20;
+    padding: 2em;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.marque-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+
+}
+
+.marque-wrapper.t-1 {
+    clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: -100%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 240px;
+    text-transform: uppercase;
+    font-weight: 400;
+    animation: marquee 10s linear infinite;
+}
+
+.modal {
+    position: absolute;
+    width: 500px;
+    height: 700px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-images {
+    width: 100%;
+    height: 600px;
+}
+
+.role {
+    margin: 6px 0;
+}
+
+.img {
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+}
+
+.img#t-1{
+    clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%);
+}
+
+.info {
+    margin-block-start: 24px;
+}
+
+.t-1 {
+    background-color: #fff;
+}
+
+.t-2 {
+    background-color: #c4bca9;
+}
+
+.t-3 {
+    background-color: #8e908a;
+}
+
+@media screen and (max-width: 992px) {
+    .modal {
+        width: 400px;
+        height: 600px;
+    }
+    .modal-images {
+        width: 100%;
+        height: 500px;
+    }
+    .img {
+        width: 100%;
+        height: 500px;
+    }
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0%, -50%);
+    }
+    50% {
+        transform: translate(-5%, -50%);
+    }
+    50.5% {
+        transform: translate(-5%, -50%);
+    }
+    100% {
+        transform: translate(0%, -50%);
+    }
+}
